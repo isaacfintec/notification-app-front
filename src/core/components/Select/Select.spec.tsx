@@ -7,11 +7,11 @@ import Select from './Select';
 expect.extend(matchers);
 
 describe('Select render', () => {
-  it('should render a Select', () => {
+  it('should render a Select component', () => {
     const screen = render(
-      <Select items={[{ value: 'Sports', label: 'Sports' }]} />
+      <Select value="Sports" items={[{ value: 'Sports', label: 'Sports' }]} />
     );
-    const element = screen.getByTestId('Select');
+    const element = screen.getByTestId('select');
     expect(element).not.toBeUndefined();
     expect(screen.container.childElementCount).toBe(1);
   });

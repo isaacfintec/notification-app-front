@@ -1,0 +1,16 @@
+{
+  "singleQuote": true,
+  "arrowParens": "always",
+  "trailingComma": "none",
+  "jsxBracketSameLine": false,
+  "tabWidth": 2,
+  "importOrder": [
+    "^react(.*)",
+    "@mui/(.*)",
+    "<THIRD_PARTY_MODULES>",
+    "@/(.*)",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

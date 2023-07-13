@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@redux": ["./src/core/redux"],
+      "@redux/*": ["./src/core/redux/*"],
+      "@core": ["./src/core"],
+      "@core/*": ["./src/core/*"],
+      "@entities": ["./src/entities"],
+      "@entities/*": ["./src/entities/*"],
+      "@router": ["./src/router"],
+      "@router/*": ["./src/router/*"]
+    }
+  }
+}

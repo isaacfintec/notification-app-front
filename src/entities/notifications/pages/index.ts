@@ -1,2 +1,1 @@
-export { default as FormPage } from './FormPage';
-export { default as LogsPage } from './LogsPage';
+export { default as MainPage } from './MainPage';

@@ -1,17 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 
-import { FormPage, LogsPage } from '../pages';
+import { MainPage } from '../pages';
 
 const ROUTES = [
   {
     title: 'Send a Message',
     path: '/',
-    component: FormPage
-  },
-  {
-    title: 'Get all logs message',
-    path: '/logs',
-    component: LogsPage
+    component: MainPage
   }
 ];
 

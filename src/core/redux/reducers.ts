@@ -1,9 +1,9 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
-// import notification from './notification/notification.slice';
+import notification from './notifications/notification.slice';
 
 const rootReducer = combineReducers({
-  //notification: notification.reducer
+  notification: notification.reducer
 });
 
 export default rootReducer;

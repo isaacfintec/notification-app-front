@@ -4,7 +4,7 @@ import { Control, Controller } from 'react-hook-form';
 
 import TextField from '@mui/material/TextField';
 
-import Select from '../Select';
+import Select from '@core/components/Select';
 
 const COMPONENTS = {
   text: TextField,
@@ -24,6 +24,7 @@ type InputFormProps = {
 };
 
 const InputForm: FC<InputFormProps> = (props) => {
+  // @ts-ignore
   const Component = COMPONENTS[props.type || 'text'] || TextField;
   return (
     <Controller

@@ -24,7 +24,6 @@ const defaultValues = {
 };
 
 const Form = (props: { onSubmit?: () => void }) => {
-  // @ts-ignore
   const dispatch = useDispatch<AppDispatch>();
 
   const { control, reset, watch, handleSubmit } = useForm({
@@ -45,7 +44,6 @@ const Form = (props: { onSubmit?: () => void }) => {
   }, []);
 
   return (
-    // @ts-ignore
     <CustomGridContainer>
       <CustomGridContainer
         style={{

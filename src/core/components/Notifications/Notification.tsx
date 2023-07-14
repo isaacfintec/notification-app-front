@@ -7,11 +7,11 @@ import { formatDate, getColorByCategory } from '@core/utils';
 
 import { Detail, NotificationWrapper } from './Notification.styled';
 
-interface Porps {
+interface Props {
   item: INotification;
 }
 
-const Notification: FC<Porps> = (props) => {
+const Notification: FC<Props> = (props) => {
   return (
     <NotificationWrapper
       style={{

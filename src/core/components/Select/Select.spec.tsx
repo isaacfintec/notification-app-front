@@ -6,7 +6,7 @@ import Select from './Select';
 
 expect.extend(matchers);
 
-describe('Select render', () => {
+describe('Select render component', () => {
   it('should render a Select component', () => {
     const screen = render(
       <Select value="Sports" items={[{ value: 'Sports', label: 'Sports' }]} />

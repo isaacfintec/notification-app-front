@@ -1,13 +1,13 @@
 import { Categories } from '../interfaces';
 
-
 export const getColorByCategory = (category: Categories) => {
   const colorPiker = {
     Sports: '#82a9bd',
     Finance: '#CFD8DC',
-    Movies: '#BDBDBD'
+    Movies: '#BDBDBD',
+    default: '#FFFFFF'
   };
-  const color = colorPiker[category];
+  const color = colorPiker[category] || colorPiker.default;
   return color;
 };
 

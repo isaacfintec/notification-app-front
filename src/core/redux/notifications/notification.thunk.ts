@@ -7,7 +7,7 @@ export const pushMessage = createAsyncThunk(
   async (message: { category: string; message: string }, { dispatch }) => {
     try {
       dispatch(showLoading(true));
-      const response = await NotificationsApi.pushMessage(message);
+      const response = await NotificationsApi.pushNotification(message);
       return response;
       // eslint-disable-next-line no-useless-catch
     } catch (error) {
@@ -29,11 +29,6 @@ export const pullNotifications = createAsyncThunk(
       const response = await NotificationsApi.pullNotifications();
       return response;
       // eslint-disable-next-line no-useless-catch
-    } catch (error) {
-      /**
-       * debug error
-       */
-      throw error;
     } finally {
       dispatch(showLoading(false));
     }

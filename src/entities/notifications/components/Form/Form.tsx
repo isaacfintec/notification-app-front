@@ -40,7 +40,7 @@ const Form = (props: { onSubmit?: () => void }) => {
     dispatch(pushMessage(data)).then((payload: { [k: string]: unknown }) => {
       if (payload.error) return;
       reset();
-      if (props.onSubmit) props.onSubmit();
+      props.onSubmit?.();
     });
   }, []);
 

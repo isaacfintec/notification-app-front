@@ -1,9 +1,6 @@
 import { styled } from '@mui/material/styles';
 
-const CustomGridContainer = styled('section')<{
-  fullHeight?: boolean;
-  fullWidth?: boolean;
-}>(({ theme }) => ({
+const CustomGridContainer = styled('section')(({ theme }) => ({
   position: 'relative',
   height: '100%',
   display: 'flex',

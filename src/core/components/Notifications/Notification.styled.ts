@@ -21,5 +21,14 @@ export const NotificationWrapper = styled('div')(({ theme }) => ({
   borderRadius: theme.spacing(1),
   padding: '1em',
   width: '100%',
-  marginBottom: '1em'
+  marginBottom: '1em',
+  '& > :first-of-type': {
+    justifyContent: 'space-between',
+    '& > :first-of-type': {
+      flex: 1
+    },
+    '& > :last-of-type': {
+      flex: 2
+    }
+  }
 }));

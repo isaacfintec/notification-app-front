@@ -44,7 +44,7 @@ const InputForm: FC<InputFormProps> = (props) => {
             variant="outlined"
             value={props.value || value}
             onChange={(e: any) => {
-              if (props.onChange) props.onChange(e.target.value);
+              props.onChange?.(e.target.value);
               onChange(e.target.value);
             }}
             onBlur={(e: any) => {

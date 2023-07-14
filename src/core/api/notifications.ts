@@ -1,18 +1,16 @@
-import { INotification } from '@core/interfaces';
+import client from './client';
 
-import client from './axios';
-
-export const pushMessage = async (message: {
+export const pushNotification = async (message: {
   category: string;
   message: string;
 }) => {
-  const { data } = await client.post('/notifications', message);
-  return data;
+  const { body } = await client.post('/notifications').send(message);
+  return body;
 };
 
 export const pullNotifications = async () => {
-  const { data } = await client.get<INotification[]>('/notifications');
-  return data;
+  const { body } = await client.get('/notifications');
+  return body;
 };
 
-export default { pushMessage, pullNotifications };
+export default { pushNotification, pullNotifications };

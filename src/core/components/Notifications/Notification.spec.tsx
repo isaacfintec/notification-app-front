@@ -7,7 +7,7 @@ import Notification from './Notification';
 
 expect.extend(matchers);
 
-describe('FormPage render', () => {
+describe('Notification render', () => {
   it('should render a FormPage', () => {
     const defaultNotification: INotification = {
       type: 'SMS',

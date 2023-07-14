@@ -25,7 +25,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "test": "react-app-rewired test a",
     "eject": "react-scripts eject",
     "format": "npx prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json)\""
   },

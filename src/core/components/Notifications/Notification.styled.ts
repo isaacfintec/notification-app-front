@@ -4,7 +4,6 @@ export const Detail = styled('div')(() => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  //alignItems: 'center',
   '& > :first-of-type': {
     color: '#FFFFFF !important',
     marginBottom: '5px'

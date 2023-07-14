@@ -1,9 +1,8 @@
-import { FC } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import NotificationRouter from '@entities/notifications/routes';
 
-const GlobalRouter: FC = () => {
+const GlobalRouter = () => {
   return (
     <BrowserRouter>
       <Routes>

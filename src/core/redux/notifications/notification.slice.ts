@@ -9,7 +9,7 @@ type TState = {
 };
 
 const initialState: TState = {
-  status: true,
+  status: false,
   notifications: []
 };
 
@@ -20,9 +20,11 @@ export const userSlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(pullNotifications.fulfilled, (state, { payload }) => {
+        state.status = true;
         state.notifications = payload;
       })
       .addCase(pullNotifications.rejected, (state) => {
+        state.status = false;
         state.notifications = initialState.notifications;
       })
       .addCase(pushMessage.fulfilled, (state) => {
